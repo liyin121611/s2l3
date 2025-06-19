@@ -14,12 +14,12 @@ function CreateLevel () {
         tiles.placeOnRandomTile(Hero, assets.tile`transparency16`)
         game.setGameOverMessage(false, "GAME OVER!")
     } else if (level == 3) {
-        tiles.setCurrentTilemap(tilemap`level4`)
+        tiles.setCurrentTilemap(tilemap`level3`)
         info.startCountdown(25)
         game.setGameOverMessage(false, "GAME OVER!")
         tiles.placeOnRandomTile(Hero, assets.tile`transparency16`)
     } else if (level == 4) {
-        tiles.setCurrentTilemap(tilemap`level7`)
+        tiles.setCurrentTilemap(tilemap`level4`)
         info.startCountdown(30)
         tiles.placeOnRandomTile(Hero, assets.tile`transparency16`)
         game.setGameOverMessage(false, "GAME OVER!")
@@ -72,7 +72,7 @@ Hero = sprites.create(img`
     ...............................
     `, SpriteKind.Player)
 controller.moveSprite(Hero)
-tiles.setCurrentTilemap(tilemap`level2`)
+tiles.setCurrentTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(Hero, assets.tile`transparency16`)
 scene.cameraFollowSprite(Hero)
 CreateLevel()
